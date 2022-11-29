@@ -114,6 +114,7 @@ export default class AppReporteCargas {
       url: 'http://127.0.0.1:9090/model3',
       headers: { Authorization: 'Basic ' + btoa('usuario1' + ':' + 'usuario1') }
     };
+    //se debe cambiar las variables a trabajar en el datatable para poder trabajar con la variable informe 
     axios(config)
       .then((response) => {
         this.data = response.data as Array<ILabels>;
